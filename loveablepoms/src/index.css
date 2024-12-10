@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS main colors */
+/*:root {
+  --main-color: #6c464fff;
+  --main-text: #9e768fff;
+  --secondary-text: #9fa4c4ff;
+  --light-background: #b3cdd1ff;
+  --dark-background: #c7f0bdff;
+}
+
+
+:root {
+--main-color: #fde8e9ff;
+--main-text: #e3bac6ff;
+--secondary-text: #bc9ec1ff;
+--light-background: #596475ff;
+--dark-background: #1f2232ff;
+}
+/*
+:root {
+--main-color: #3a606eff;
+--main-text: #607b7dff;
+--secondary-text: #828e82ff;
+--light-background: #e0e0e0ff;
+--dark-background: #aaae8eff;
+}
+
+
+*/
+:root {
+--main-color: #cebebeff;
+--main-text: #ece2d0ff;
+--secondary-text: #d5b9b2ff;
+--light-background: #a26769ff;
+--dark-background: #6d2e46ff;
+}
+/*
+:root {
+--main-color: #dde8b9ff;
+--main-text: #e8d2aeff;
+--secondary-text: #d7b29dff;
+--light-background: #cb8589ff;
+--dark-background: #796465ff;
+}
+*/
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  margin: 0;
+  background-color: var(--light-background);
+  color: var(--main-color);
+  @apply: var(--main-color);
+}
+
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.patrick-hand-regular {
+  font-family: "Patrick Hand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  background-color: var(--dark-background);
+}
+
+section, footer {
+  color: var(--main-text)
+}
