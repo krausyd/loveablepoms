@@ -2,78 +2,157 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS main colors */
-/*:root {
-  --main-color: #6c464fff;
-  --main-text: #9e768fff;
-  --secondary-text: #9fa4c4ff;
-  --light-background: #b3cdd1ff;
-  --dark-background: #c7f0bdff;
+@layer base {
+  :root {
+    --color-pink-200: #f82065;
+  }
 }
 
-
+@charset "UTF-8";
 :root {
---main-color: #fde8e9ff;
---main-text: #e3bac6ff;
---secondary-text: #bc9ec1ff;
---light-background: #596475ff;
---dark-background: #1f2232ff;
-}
-/*
-:root {
---main-color: #3a606eff;
---main-text: #607b7dff;
---secondary-text: #828e82ff;
---light-background: #e0e0e0ff;
---dark-background: #aaae8eff;
+  --Colours__Aqua__50:#e9fcfb;
+  --Colours__Aqua__100:#bcf6f3;
+  --Colours__Aqua__200:#8fefec;
+  --Colours__Aqua__300:#63e9e4;
+  --Colours__Aqua__400:#36e3dc;
+  --Colours__Aqua__500:#1fe0d9;
+  --Colours__Aqua__600:#1bc0ba;
+  --Colours__Aqua__700:#169c98;
+  --Colours__Aqua__800:#10706c;
+  --Colours__Aqua__900:#094341;
+  --Colours__Aqua__950:#062d2b;
+  --Colours__Yellow__50:#fff7e5;
+  --Colours__Yellow__100:#ffe8b3;
+  --Colours__Yellow__200:#ffd980;
+  --Colours__Yellow__300:#ffca4d;
+  --Colours__Yellow__400:#ffba1a;
+  --Colours__Yellow__500:#ffb404;
+  --Colours__Yellow__600:#e6a100;
+  --Colours__Yellow__700:#b37d00;
+  --Colours__Yellow__800:#805900;
+  --Colours__Yellow__900:#4d3600;
+  --Colours__Yellow__950:#332400;
+  --Colours__Pink__50:#fee6ee;
+  --Colours__Pink__100:#fdb5cc;
+  --Colours__Pink__200:hsl(341, 94%, 75%);
+  --Colours__Pink__300:hsl(341, 94%, 63%);
+  --Colours__Pink__400:#f82065;
+  --Colours__Pink__500:#f70855;
+  --Colours__Pink__600:#de074d;
+  --Colours__Pink__700:#ad063c;
+  --Colours__Pink__800:#7b042b;
+  --Colours__Pink__900:#4a021a;
+  --Colours__Pink__950:#310211;
+  --Colours__Orange__50:#fff1e5;
+  --Colours__Orange__100:#ffd5b3;
+  --Colours__Orange__200:#ffb980;
+  --Colours__Orange__300:#ff9d4d;
+  --Colours__Orange__400:#ff811a;
+  --Colours__Orange__500:#ff7300;
+  --Colours__Orange__600:#e66700;
+  --Colours__Orange__700:#b35000;
+  --Colours__Orange__800:#803900;
+  --Colours__Orange__900:#4d2200;
+  --Colours__Orange__950:#331700;
+  --Colours__Gray__50:#f3f2f2;
+  --Colours__Gray__100:#dad7d9;
+  --Colours__Gray__200:#c8c4c6;
+  --Colours__Gray__300:#a9a3a6;
+  --Colours__Gray__400:#90888c;
+  --Colours__Gray__500:#847b80;
+  --Colours__Gray__600:#776f73;
+  --Colours__Gray__700:#5c5659;
+  --Colours__Gray__800:#423e40;
+  --Colours__Gray__900:#282526;
+  --Colours__Gray__950:#1a191a;
+  --Colours__Blue__50:#eaedfb;
+  --Colours__Blue__100:#c0caf2;
+  --Colours__Blue__200:#96a7e9;
+  --Colours__Blue__300:#8095e4;
+  --Colours__Blue__400:#4261d7;
+  --Colours__Blue__500:#2d4fd2;
+  --Colours__Blue__600:#2848bd;
+  --Colours__Blue__700:#1f3893;
+  --Colours__Blue__800:#162869;
+  --Colours__Blue__900:#0d183f;
+  --Colours__Blue__950:#09102a;
+  --Colours__Green__50:#f3f9ec;
+  --Colours__Green__100:#dcecc5;
+  --Colours__Green__200:#c4e09f;
+  --Colours__Green__300:#acd378;
+  --Colours__Green__400:#a0cd64;
+  --Colours__Green__500:#89c13e;
+  --Colours__Green__600:#7bae38;
+  --Colours__Green__700:#60872c;
+  --Colours__Green__800:#44601f;
+  --Colours__Green__900:#293a13;
+  --Colours__Green__950:#1b270c;
+  --Colours__Sky__50:#e5f7ff;
+  --Colours__Sky__100:#b3e8ff;
+  --Colours__Sky__200:#91deff;
+  --Colours__Sky__300:#4dc9ff;
+  --Colours__Sky__400:#1abaff;
+  --Colours__Sky__500:#00b3ff;
+  --Colours__Sky__600:#00a1e6;
+  --Colours__Sky__700:#007db3;
+  --Colours__Sky__800:#005980;
+  --Colours__Sky__900:#00364d;
+  --Colours__Sky__950:#002433;
 }
 
-
-*/
-:root {
---main-color: #cebebeff;
---main-text: #ece2d0ff;
---secondary-text: #d5b9b2ff;
---light-background: #a26769ff;
---dark-background: #6d2e46ff;
+.h1 {
+  font-size: 3.812rem;
 }
-/*
-:root {
---main-color: #dde8b9ff;
---main-text: #e8d2aeff;
---secondary-text: #d7b29dff;
---light-background: #cb8589ff;
---dark-background: #796465ff;
-}
-*/
 
-html,
-body,
-#root,
-.app {
-  height: 100%;
+.h2 {
+  font-size: 3.062rem;
+}
+
+.h3 {
+  font-size: 2.438rem;
+}
+
+.h4 {
+  font-size: 1.938rem;
+}
+
+.h5 {
+  font-size: 1.562rem;
+}
+
+.headline {
+  font-size: 1.25rem;
+}
+
+.body {
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 0.812rem;
+}
+
+.footnote {
+  font-size: 0.625rem;
+}
+
+body {
   margin: 0;
-  background-color: var(--light-background);
-  color: var(--main-color);
-  @apply: var(--main-color);
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.henny-penny-regular {
-  font-family: "Henny Penny", system-ui;
-  font-weight: 400;
+body {
+  background-color: var(--Colours__Sky__50);
+  font-family: "Onest", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
-}
-
-.patrick-hand-regular {
-  font-family: "Patrick Hand", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-nav {
-  background-color: var(--dark-background);
-}
-
-section, footer {
-  color: var(--main-text)
 }

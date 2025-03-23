@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import NavBar from './components/navbar';
+import Header from './components/header';
 import Home from './pages/home';
 import Footer from './components/footer';
 
@@ -12,6 +11,7 @@ function App() {
   return (
     <div className='app'>
       <NavBar/>
+      <Header />
       <Home />
       <Footer/>
     </div>
